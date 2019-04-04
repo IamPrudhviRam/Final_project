@@ -1,0 +1,38 @@
+//Here i Have used oracle Developer tools and there may be significant changes over other versions
+create table STUDENT (
+ID NUMBER,       
+STUDNAME VARCHAR2(30) NOT NULL,
+STUDDEPT VARCHAR2(5) NOT NULL,
+GENDER CHAR(1) ,  
+SEM_1 FLOAT(5) NOT NULL,    
+SEM_2 FLOAT(5) NOT NULL,
+SEM_3 FLOAT(5) NOT NULL,  
+SEM_4 FLOAT(5) NOT NULL, 
+SEM_5 FLOAT(5) NOT NULL,   
+SEM_6 FLOAT(5) NOT NULL,  
+SEM_7 FLOAT(5),    
+SEM_8 FLOAT(5),
+PRIMARY KEY (ID));  //Created a student table with marklist
+
+desc student;  //checking the variables
+
+DESC TESTING;
+DROP TABLE TESTING;
+
+//  Inserting values into the database
+insert into student values(1,'GURU SAI M','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(2,'SHANEEL AK','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(3,'PRAVEEN B','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(4,'JAYA','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(5,'SHANKAR M','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(6,'SUBBA REDDY','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(7,'SUNEEL','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(8,'VIKRANTH','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(9,'AKHIL','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+insert into student values(10,'HARISH REDDY','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8.1,7.2);
+
+COMMIT; //  Saving the data i.e, marklist and student details 
+
+SELECT * FROM STUDENT;  //Viewing saved data
+
+//Any data that is insterted can be easily alterable with oracle developer tools and i can assure on the same.
