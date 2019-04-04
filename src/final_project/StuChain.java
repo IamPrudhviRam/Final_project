@@ -12,27 +12,14 @@ public class StuChain {
 public static ArrayList<StuBlock> blockchain = new ArrayList<StuBlock>();
 public static int difficulty = 5;
 public static void main(String[] args) {	
+   
 System.out.println("Trying to Mine block 1 : ");
 addBlock(new StuBlock("", "0"));
-System.out.println("Trying to Mine block 2 : ");
-addBlock(new StuBlock("",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 3 : ");
-addBlock(new StuBlock("",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 4 : ");
-addBlock(new StuBlock("",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 5 : ");
-addBlock(new StuBlock("Now control is in the fifth block",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 6: ");
-addBlock(new StuBlock("Now control is in the sixth block",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 7 : ");
-addBlock(new StuBlock("Now control is in the seventh block",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 8 : ");
-addBlock(new StuBlock("Now control is in the eighth block",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 9: ");
-addBlock(new StuBlock("Now control is in the nineth block",blockchain.get(blockchain.size()-1).hash));
-System.out.println("Trying to Mine block 10 : ");
-addBlock(new StuBlock("Finally it is in the tenth block",blockchain.get(blockchain.size()-1).hash));
-
+   for(int i=2;i<=10;i++)
+   {
+      System.out.println("Trying to Mine block  : " +i);
+      addBlock(new StuBlock("",blockchain.get(blockchain.size()-1).hash));
+   }
 System.out.println("\nBlockchain is Valid: " + isChainValid());
 String blockchainJson = StuHashAlgorithm.getJson(blockchain);
 System.out.println("\nThe block chain: ");
