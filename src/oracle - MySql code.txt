@@ -1,3 +1,12 @@
+# Block_chain
+/**
+ *
+ * @author PRUDHVI CHINNA
+ *
+ * Sample Implementation of technical terms in Block chain using oracle database.
+ * Here i have included code for basic table of a studentdatabase with semester marklist and few other parameters
+ * You can include whichever parameters and any sample database will do for this project.
+*/
 //Here i Have used oracle Developer tools and there may be significant changes over other versions
 create table STUDENT (
 ID NUMBER,       
