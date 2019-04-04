@@ -42,6 +42,12 @@ insert into student values(10,'HARISH REDDY','ECE','M',8.1,7.9,8.1,7.3,7.5,7.7,8
 
 COMMIT; //  Saving the data i.e, marklist and student details 
 
+//Or simply if you have huge number of data follow this line
+insert into student values(&ID,'&STUDNAME','&STUDDEPT','&GENDER',&DOB,&SEM_1,&SEM_2,&SEM_3,&SEM_4,&SEM_5,&SEM_6,&SEM_7,&SEM_8);
+/
+//after this you can feed as much of data as you need.
+COMMIT;//To save.
+
 SELECT * FROM STUDENT;  //Viewing saved data
 
 //Any data that is insterted can be easily alterable with oracle developer tools and i can assure on the same.
