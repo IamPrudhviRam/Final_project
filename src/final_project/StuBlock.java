@@ -19,8 +19,8 @@ this.data = data;
 this.previousHash = previousHash;
 this.timeStamp = new Date().getTime();	
 this.hash = calculateHash(); 
-Student_database s = new Student_database();
-this.data = String.valueOf(s);
+Student_database d = new Student_database();
+this.data = String.valueOf(d);
 }              
 
 public String calculateHash() {
